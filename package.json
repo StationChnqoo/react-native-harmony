@@ -1,0 +1,58 @@
+{
+  "_from": "react-native-harmony",
+  "_id": "react-native-harmony@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-e5xEtVJi4K8FgtqcsS00ZhNZI7UW91guv9diB8K1KlAkco07vgHZrUXscEd3cLrL4fOAUuykM+RocTNbFmannw==",
+  "_location": "/react-native-harmony",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-harmony",
+    "name": "react-native-harmony",
+    "escapedName": "react-native-harmony",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-harmony/-/react-native-harmony-1.0.1.tgz",
+  "_shasum": "bdbec1ade0918c4e4d30d49da110e576eaac573f",
+  "_spec": "react-native-harmony",
+  "_where": "/Users/i/TestReactNative",
+  "author": {
+    "name": "www.cctv3.net"
+  },
+  "bugs": {
+    "url": "https://github.com/ChenqiaoYizhan/react-native-harmony/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "React Native UI 组件库，符合 Huawei harmonyOS ( 华为鸿蒙操作系统 ) 设计规范。",
+  "homepage": "https://github.com/ChenqiaoYizhan/react-native-harmony#readme",
+  "keywords": [
+    "Huawei",
+    "harmony",
+    "react-native",
+    "设计规范",
+    "material design",
+    "华为",
+    "鸿蒙",
+    "UI",
+    "组件库"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-harmony",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChenqiaoYizhan/react-native-harmony.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}
