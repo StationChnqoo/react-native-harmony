@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "es2019"
+    ],
+    "jsx": "react",
+    "strict": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "outDir": "./dist/",
+    "preserveConstEnums": true,
+    "isolatedModules": true,
+    "removeComments": false,
+    "sourceMap": false,
+    "downlevelIteration": true,
+    "target": "esnext",
+    "noEmit": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/react-json-pretty/types",
+      "typing"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@common/*": [
+        "../../common/*"
+      ],
+      "@components/*": [
+        "./src/component/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./src/**/*",
+    "./typings.d.ts",
+    "press.config.js"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    // "useBabel": true,
+    // "useCache": true
+    "transpileOnly": false
+  }
+}

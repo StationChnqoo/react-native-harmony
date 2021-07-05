@@ -1,3 +1,5 @@
+import PropTyps from "prop-types";
+
 var Store = (function () {
   var StoreClass = function () {};
   StoreClass.prototype = {
@@ -36,5 +38,4 @@ var Store = (function () {
     },
   };
 })();
-
 export default Store;
