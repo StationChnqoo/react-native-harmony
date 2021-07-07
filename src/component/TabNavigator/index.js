@@ -57,7 +57,15 @@ const TabNavigator = props => {
     return array;
   };
 
-  return <View style={defaultStyles.viewTabNavigator}>{loadTabs()}</View>;
+  return (
+    <View
+      style={[
+        defaultStyles.viewTabNavigator,
+        props.hasOwnProperty('style') ? props.style : {},
+      ]}>
+      {loadTabs()}
+    </View>
+  );
 };
 
 TabNavigator.propTypes = {
@@ -72,18 +80,18 @@ TabNavigator.propTypes = {
 
 const defaultStyles = StyleSheet.create({
   viewTabNavigator: {
-    paddingVertical: 8,
-    backgroundColor: '#f0f0f0',
+    paddingVertical: 6,
+    backgroundColor: '#f1f1f1',
     alignItems: 'center',
     flexDirection: 'row',
     display: 'flex',
   },
   text: {
-    fontSize: 12,
+    fontSize: 10,
   },
   image: {
-    height: 24,
-    width: 24,
+    height: 22,
+    width: 22,
   },
   viewTab: {
     flexDirection: 'column',
