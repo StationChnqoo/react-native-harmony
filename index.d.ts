@@ -1,8 +1,12 @@
 import React, {useEffect} from 'react';
-import Closure from "./src/state/Closure";
-import Colors from "./src/x/Colors";
-import Button, { ButtonProps } from './src/component/Button'
+import Button, {ButtonProps} from './src/component/Button';
+import TabNavigator from './src/component/TabNavigator';
+import x from './src/x';
+import Closure from './src/state/Closure';
 
 export = {
-    Button
-}
+  x,
+  Closure,
+  Button,
+  TabNavigator,
+};

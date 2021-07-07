@@ -4,9 +4,7 @@ import { StyleProp, TextStyle, ViewStyle } from "react-native";
 export type ButtonSkin = "normal" | "bolid";
 interface ButtonProps {
   style: any;
-  /**
-   * 点击事件
-   */
+  /** 点击事件 */
   onPress: () => void;
   /**
    * Skin 按钮的皮肤
@@ -15,14 +13,10 @@ interface ButtonProps {
    * - `normal`: 默认按钮样式
    */
   skin: "normal" | "bolid";
-  /**
-   * 按钮标题
-   */
+  /** 按钮标题 */
   text?: string;
   textStyle?: StyleProp<TextStyle>;
-  /**
-   * 是否禁止按钮点击
-   */
+  /** 是否禁止按钮点击 */
   disabled?: boolean;
 }
 
