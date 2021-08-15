@@ -1,4 +1,4 @@
-import PropTyps from "prop-types";
+import PropTyps from 'prop-types';
 
 var Store = (function () {
   var StoreClass = function () {};
@@ -13,10 +13,10 @@ var Store = (function () {
       return this.state;
     },
     // Get or set
-    set: function (key, value) {
+    set: function (key: string, value: any) {
       this.state[key] = value;
     },
-    get: function (key, defaultValue) {
+    get: function (key: string, defaultValue: any) {
       // 如果 state 里面没有缓存，则缓存 state[key] = defaultValue
       if (!this.state.hasOwnProperty(key)) {
         this.set(key, defaultValue);

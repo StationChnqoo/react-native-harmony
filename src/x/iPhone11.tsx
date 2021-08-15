@@ -1,6 +1,6 @@
 import {Dimensions, Platform, StatusBar} from 'react-native';
 
-export function isiPhone11() {
+const isiPhone11 = () => {
   const dimensions = Dimensions.get('window');
   return (
     Platform.OS === 'ios' &&
@@ -17,22 +17,18 @@ export function isiPhone11() {
       dimensions.height === 926 ||
       dimensions.width === 926)
   );
-}
+};
 
-export function getStatusBarHeight() {
+const getStatusBarHeight = () => {
   return Platform.select({
     ios: isiPhone11() ? 44 : 20,
-    android: 0, // StatusBar.currentHeight
+    android: StatusBar.currentHeight, // StatusBar.currentHeight
     default: 0,
   });
-}
-
-export function getBottomSpace() {
-  return isiPhone11() ? 34 : 0;
-}
-
-export default {
-  isiPhone11,
-  getStatusBarHeight,
-  getBottomSpace,
 };
+
+const getBottomSpace = () => {
+  return isiPhone11() ? 34 : 0;
+};
+
+export default {isiPhone11, getStatusBarHeight, getBottomSpace};
